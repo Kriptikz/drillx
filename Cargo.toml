@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["drillx", "examples/*", "program"]
+members = ["drillx_2", "examples/*", "program"]
 
 [workspace.package]
 version = "1.0.0"
