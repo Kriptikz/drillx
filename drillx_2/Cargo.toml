@@ -1,5 +1,5 @@
 [package]
-name = "drillx"
+name = "drillx_2"
 description = "Drillx is a proof-of-work algorithm for cryptocurrency mining on Solana."
 version.workspace = true
 edition.workspace = true
