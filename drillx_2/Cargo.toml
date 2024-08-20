@@ -1,7 +1,6 @@
 [package]
 name = "drillx"
 description = "Drillx is a proof-of-work algorithm for cryptocurrency mining on Solana."
-repository = "https://github.com/Kriptikz/drillx.git"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
