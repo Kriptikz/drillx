@@ -129,7 +129,7 @@ fn hashv(digest: &[u8; 16], nonce: &[u8; 8]) -> [u8; 32] {
 /// The digest is sorted prior to hashing to prevent malleability.
 #[cfg(not(feature = "solana"))]
 #[inline(always)]
-fn hashv(digest: &[u8; 16], nonce: &[u8; 8]) -> [u8; 32] {
+pub fn hashv(digest: &[u8; 16], nonce: &[u8; 8]) -> [u8; 32] {
     let mut hasher = sha3::Keccak256::new();
     hasher.update(&sorted(*digest));
     hasher.update(nonce);
