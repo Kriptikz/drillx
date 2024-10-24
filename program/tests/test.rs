@@ -1,4 +1,4 @@
-use drillx::Solution;
+use drillx_2::Solution;
 use solana_program::hash::Hash;
 use solana_program_test::{processor, BanksClient, ProgramTest};
 use solana_sdk::{
@@ -15,7 +15,7 @@ async fn test_initialize() {
     // Hash
     let challenge = [255; 32];
     let nonce = 0u64;
-    let hash = drillx::hash(&challenge, &nonce.to_le_bytes()).unwrap();
+    let hash = drillx_2::hash(&challenge, &nonce.to_le_bytes()).unwrap();
 
     // Should succeed
     let s = Solution::new(hash.d, nonce.to_le_bytes());

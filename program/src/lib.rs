@@ -1,5 +1,5 @@
 use bytemuck::{Pod, Zeroable};
-use drillx::Solution;
+use drillx_2::Solution;
 use solana_program::{
     self,
     account_info::AccountInfo,

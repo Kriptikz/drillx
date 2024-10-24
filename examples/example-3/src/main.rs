@@ -4,11 +4,11 @@ const TEST_SIZE: u64 = 1000;
 
 fn main() {
     println!("Benchmarking...");
-    let mut memory = drillx::equix::SolverMemory::new();
+    let mut memory = drillx_2::equix::SolverMemory::new();
     let challenge = [255; 32];
     let timer = Instant::now();
     for nonce in 0..TEST_SIZE {
-        drillx::hash_with_memory(&mut memory, &challenge, &nonce.to_le_bytes()).ok();
+        drillx_2::hash_with_memory(&mut memory, &challenge, &nonce.to_le_bytes()).ok();
     }
     println!(
         "Did {} hashes in {} ms\nHashrate: {} H/s",
